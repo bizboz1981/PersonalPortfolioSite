@@ -21,3 +21,13 @@
     font-size: x-large;
     line-height: 150%;
 }
+
+.section-heading p {
+    font-family: "anonymous pro", monospace;
+    padding: 1em;
+}
+
+.section-heading h1 {
+    font-family: "exo", sans-serif;
+    padding: 1rem;
+}
