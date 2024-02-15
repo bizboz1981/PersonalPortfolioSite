@@ -7,6 +7,17 @@
     height: 100vh;
     background-size: cover;
     background-position: center right;
-    /* z-index: -200; */
     background-repeat: no-repeat;
+}
+
+.buzz-words {
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "anonymous pro", monospace;
+    color: white;
+    height: auto;
+    font-size: x-large;
+    line-height: 150%;
 }
