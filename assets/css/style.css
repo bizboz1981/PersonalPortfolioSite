@@ -31,3 +31,11 @@
     font-family: "exo", sans-serif;
     padding: 1rem;
 }
+
+/* shift image to the right for smaller screens */
+
+@media (max-width: 768px) {
+    .hero-image {
+        background-position: calc(100% + 100px) center;
+    }
+} 
