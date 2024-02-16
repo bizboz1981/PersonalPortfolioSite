@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Exo:ital,wght@0,100..900;1,100..900&family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+
+/* colours */
+
+.active {
+    color: #00ff00 !important;
+}
+
 .hero-image {
     background-image: url("/assets/img/HeadshotLandscape.jpg");
     position: relative;
@@ -35,15 +42,22 @@
 /* social-media */
 .social-media {
     width: 50%;
-    border: 1px solid #2f2f2f;
+    border: 1px solid #00ff00;
     margin-bottom: 50px;
     margin: auto;
     padding: 1em;
     text-align: center;
+    background-color: #2f2f2f;
 }
 
 .social-links {
-    color: #2f2f2f;
+    font-size: 2em;
+}
+
+.fa {
+    color: #00ff00;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 /* footer */
