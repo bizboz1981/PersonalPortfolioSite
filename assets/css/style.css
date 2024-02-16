@@ -80,7 +80,7 @@
 @media screen and (orientation: portrait) {
     .hero-image {
         background-image: url("../img/IMG_1888-2.jpg");
-        background-position: 50% 30%;
+        background-position: 50% 0%;
         background-size: auto 100vh;
         height: 100vh;
         background-repeat: no-repeat;
