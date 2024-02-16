@@ -32,6 +32,27 @@
     padding: 1rem;
 }
 
+/* social-media */
+.social-media {
+    width: 50%;
+    border: 1px solid #2f2f2f;
+    margin-bottom: 50px;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.social-links {
+    color: #2f2f2f;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
 /* shift image to the right for smaller screens */
 
 @media (max-width: 768px) {
