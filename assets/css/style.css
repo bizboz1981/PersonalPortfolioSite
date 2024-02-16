@@ -80,11 +80,11 @@
 @media screen and (orientation: portrait) {
     .hero-image {
         background-image: url("../img/IMG_1888-2.jpg");
-        background-position: center center;
-        background-size: cover !important;
-        position: relative;
-        min-width: 50%;
-        
+        background-position: 50% 30%;
+        background-size: auto 100vh;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-color: #2f2f2f;
     }
 }
         /* styles for portrait screens */
