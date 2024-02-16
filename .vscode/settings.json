@@ -21,7 +21,7 @@
       "**/CVS": true
    },
    "files.autoSave": "off",
-   "workbench.colorTheme": "Atom One Dark",
+   "workbench.colorTheme": "Panda Syntax",
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "biomejs.biome",
 }
