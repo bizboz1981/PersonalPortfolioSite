@@ -12,7 +12,7 @@
 }
 
 .hero-image {
-    background-image: url("/assets/img/HeadshotLandscape.jpg");
+    background-image: url("../img/HeadshotLandscape.jpg");
     position: relative;
     background-attachment: fixed;
     height: 100vh;
@@ -79,10 +79,11 @@
 
 @media screen and (orientation: portrait) {
     .hero-image {
-        background-image: url("/assets/img/IMG_1888-2.jpg");
+        background-image: url("../img/IMG_1888-2.jpg");
         background-position: center center;
-        background-size: cover;
+        background-size: cover !important;
         position: relative;
+        min-width: 50%;
         
     }
 }
