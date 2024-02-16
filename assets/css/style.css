@@ -3,8 +3,12 @@
 
 /* colours */
 
-.active {
+.active, .fa {
     color: #00ff00 !important;
+}
+
+.light-background {
+    background-color: #ebebeb;
 }
 
 .hero-image {
@@ -20,8 +24,7 @@
 .buzz-words {
     background-color: #2f2f2f;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 2rem;
     font-family: "anonymous pro", monospace;
     color: white;
     height: auto;
@@ -29,20 +32,20 @@
     line-height: 150%;
 }
 
-.section-heading p {
-    font-family: "anonymous pro", monospace;
-    padding: 1em;
-}
 
 .section-heading h1 {
     font-family: "exo", sans-serif;
     padding: 1rem;
 }
 
+.section-heading p {
+    font-family: "anonymous pro", monospace;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+}
 /* social-media */
 .social-media {
     width: 50%;
-    border: 1px solid #00ff00;
     margin-bottom: 50px;
     margin: auto;
     padding: 1em;
@@ -55,7 +58,6 @@
 }
 
 .fa {
-    color: #00ff00;
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
@@ -63,8 +65,7 @@
 /* footer */
 
 .footer {
-    margin-top: 20px;
-    padding-top: 20px;
+
 }
 
 /* shift image to the right for smaller screens */
