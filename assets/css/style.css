@@ -1,16 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Exo:ital,wght@0,100..900;1,100..900&family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
-/* colours */
+/* ---------------------------------------------------------------------------colours */
 
-.active, .fa {
-    color: #00ff00 !important;
+/* backgrounds */
+.about-body {
+    background-color: #2f2f2f;
+    color: white
 }
 
 .light-background {
     background-color: #ebebeb;
 }
+/* brand colour lime */
+.active, .fa {
+    color: #00ff00 !important;
+}
 
+/* progress bar background grey */
+.bar-bg-color {
+    background-color: #404040;
+  }
+
+  .progress-bar-green {
+    background-color: #00ff00;
+    color: black;
+  }
+
+  .progress-bar-pink {
+    background-color: #ff00ff;
+  }
+
+  .progress-bar-gray {
+    background-color: #929292;
+  }
+
+  .progress-bar-dark-gray {
+    background-color: #5c5c5c;
+  }
+
+/* ----------------------------------------------------------------------------home page */
 .hero-image {
     background-image: url("../img/HeadshotLandscape.jpg");
     position: relative;
@@ -63,19 +92,8 @@
     margin-right: 0.5em;
 }
 
-/* footer */
 
-/* .footer {
-    color;
-} */
-
-/* shift image to the right for smaller screens */
-
-/* @media (max-width: 768px) {
-    .hero-image {
-        background-position: calc(100% + 100px) center;
-    }
-}  */
+/* ----------------------------------------------------------styles for portrait screens */
 
 @media screen and (orientation: portrait) {
     .hero-image {
@@ -87,4 +105,29 @@
         background-color: #2f2f2f;
     }
 }
-        /* styles for portrait screens */
+        
+/* ------------------------------------------about page */
+.about-body {
+    font-family: exo, sans-serif;
+}
+
+  /* -----------------------------------------------------------------progress bars */
+
+.progress-section {
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bars {
+    margin-bottom: 50px;
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+.progress-text {
+    text-align: left;
+    padding-left: 1rem;
+    font-weight: bold;
+}
