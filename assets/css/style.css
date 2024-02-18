@@ -65,9 +65,9 @@
 
 /* footer */
 
-.footer {
-
-}
+/* .footer {
+    color;
+} */
 
 /* shift image to the right for smaller screens */
 
@@ -79,7 +79,7 @@
 
 @media screen and (orientation: portrait) {
     .hero-image {
-        background-image: url("../img/IMG_1888-2.jpg");
+        background-image: url("../img/HedshotPortrait.jpg");
         background-position: 50% 0%;
         background-size: auto 100vh;
         height: 100vh;
