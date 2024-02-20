@@ -103,9 +103,20 @@
         height: 100vh;
         background-repeat: no-repeat;
         background-color: #2f2f2f;
-        /* background-attachment: fixed; */
+        position: relative;
+        background-attachment: fixed;
     }
-}
+/* }
+
+.hero-image {
+    background-image: url("../img/HeadshotLandscape.jpg");
+    position: relative;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+} */
         
 /* ----------------------------------------------------------------------about page */
 
