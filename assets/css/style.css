@@ -12,6 +12,12 @@
 .light-background {
     background-color: #ebebeb;
 }
+
+.dark-background {
+    background-color: #2f2f2f;
+    color: white;
+}
+
 /* brand colour lime */
 .active, .fa {
     color: #00ff00 !important;
