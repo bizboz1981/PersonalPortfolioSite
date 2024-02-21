@@ -23,6 +23,10 @@
     color: #00ff00 !important;
 }
 
+.fa:hover {
+    color: #ff00ff !important;
+}
+
 /* progress bar background grey */
 .bar-bg-color {
     background-color: #404040;
@@ -217,7 +221,7 @@ background-color: #5c5c5c;
         display: none;
     }
     .project-list {
-        padding: 0px 0px 50px 50px;
+        padding: 0px 0px 50px 00px;
     }
 }
 
@@ -243,6 +247,28 @@ li p {
     font-size: 20px;
 }
 /* -----------------------------------------------------------------contact page */
+
+.centre-form {
+    position: relative;
+    margin: 0 auto;
+    background-color: #2f2f2f;
+}
+
+.contact-form {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 50%;
+    background-color:transparent;
+    color: white;
+}
+
+.section-heading-contact h1,
+.section-heading-contact p {
+    font-family: "exo", sans-serif;
+    padding-left: 0px;
+    margin-left: 0px;
+    color: white;
+}
 
 /* ------------------------------------------------MEDIA QUERIES AT BOTTOM OF CSS */
 

@@ -24,4 +24,7 @@
    "workbench.colorTheme": "Dracula",
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "biomejs.biome",
+   "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+   },
 }
