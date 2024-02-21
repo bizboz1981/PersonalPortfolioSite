@@ -16,6 +16,7 @@
 .dark-background {
     background-color: #2f2f2f;
     color: white;
+    margin-top: 50px;
 }
 
 /* brand colour lime */
@@ -28,22 +29,28 @@
     background-color: #404040;
   }
 
-  .progress-bar-green {
+.progress-bar-green {
+background-color: #00ff00;
+color: black;
+}
+
+.progress-bar-pink {
+background-color: #ff00ff;
+}
+
+.progress-bar-gray {
+background-color: #929292;
+}
+
+.progress-bar-dark-gray {
+background-color: #5c5c5c;
+}
+
+.btn-get-code {
     background-color: #00ff00;
     color: black;
-  }
-
-  .progress-bar-pink {
-    background-color: #ff00ff;
-  }
-
-  .progress-bar-gray {
-    background-color: #929292;
-  }
-
-  .progress-bar-dark-gray {
-    background-color: #5c5c5c;
-  }
+    text-decoration: none;
+}
 
 /* ----------------------------------------------------------------------------home page */
 .hero-image {
@@ -112,26 +119,18 @@
         position: relative;
         background-attachment: fixed;
     }
-/* }
+}
 
-.hero-image {
-    background-image: url("../img/HeadshotLandscape.jpg");
-    position: relative;
-    background-attachment: fixed;
-    height: 100vh;
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-} */
         
 /* ----------------------------------------------------------------------about page */
 
-/* -----------------------------------------------------------------progress bars */
+/* ---------------------------------------------------------progress bars */
 
 .progress-section {
     top: 50%;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .progress-bars {
@@ -140,10 +139,11 @@
     margin-right: 1rem;
 }
 
-.progress {
-    margin-bottom: 20px;
+.bar-bg-color {
+    margin-bottom: 20px; 
     height: 25px;
 }
+
 .progress-text {
     text-align: left;
     padding-left: 1rem;
@@ -153,7 +153,7 @@
     font-size: 1.5em;
 }
 
-/* timeline */
+/* ------------------------------------------ timeline */
 .timeline-item {
     padding: 4em 1em 0em 2em;
     position: relative;
@@ -190,9 +190,24 @@
     background: #fafafa;
 }
 
+/* ----------------------------------------------------------------Projects page */
+
+.code-image {
+    background-image: url("../img/DALL-E_Python.webp");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (orientation: portrait) {
+    .code-image {
+        display: none;
+    }
+}
+
 /* -----------------------------------------------------------------contact page */
 
-/* MEDIA QUERIES AT BOTTOM OF CSS */
+/* ------------------------------------------------MEDIA QUERIES AT BOTTOM OF CSS */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
