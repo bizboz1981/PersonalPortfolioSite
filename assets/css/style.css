@@ -4,10 +4,6 @@
 /* ---------------------------------------------------------------------------colours */
 
 /* backgrounds */
-.about-body {
-    background-color: #2f2f2f;
-    color: white
-}
 
 .light-background {
     background-color: #ebebeb;
@@ -70,6 +66,7 @@ background-color: #5c5c5c;
 }
 /* ----------------------------------------------------------------------------home page */
 .hero-image {
+    background-color: #2f2f2f;
     background-image: url("../img/HeadshotLandscape.jpg");
     position: relative;
     background-attachment: fixed;
@@ -77,6 +74,13 @@ background-color: #5c5c5c;
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .buzz-words {
