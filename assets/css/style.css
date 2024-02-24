@@ -270,6 +270,11 @@ li p {
     color: white;
 }
 
+.form-container {
+    min-height: 100vh;
+    background-color: #2f2f2f;
+}
+
 /* ------------------------------------------------MEDIA QUERIES AT BOTTOM OF CSS */
 
 /* Small devices (landscape phones, 576px and up) */

@@ -43,8 +43,8 @@
     <!-- main content -->
     <!-- contact form -->
     <section>
-        <form method="POST" action="https://formdump.codeinstitute.net/">
-            <div class="container-fluid">
+        <div class="container-fluid form-container">
+            <form method="POST" action="https://formdump.codeinstitute.net/">
                 <div class="row">
                     <div class="centre-form">
                         <div class="col-10 col-md-8 col-xl-6 contact-form">
@@ -60,15 +60,17 @@
                                 <div class="col">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Your name">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your name">
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Your email">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Your email">
                                     </div>
                                     <div class="mb-3">
                                         <label for="message" class="form-label">Message</label>
-                                        <textarea class="form-control" id="message" rows="8"
+                                        <textarea class="form-control" id="message" rows="8" name="message"
                                             placeholder="Your message"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-get-code">Submit</button>
@@ -77,8 +79,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </section>
     <!-- Social media links -->
     <section class="container-fluid">
@@ -96,9 +98,7 @@
                 </ul>
             </div>
         </div>
-    </section>
-
-    <!-- footer from https://mdbootstrap.com/docs/standard/navigation/footer/-->
+    </section> <!-- footer from https://mdbootstrap.com/docs/standard/navigation/footer/-->
     <footer class="bg-body-tertiary text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3 light-background" style="background-color: rgba(0, 0, 0, 0.05);">
