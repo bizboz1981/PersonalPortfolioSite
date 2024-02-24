@@ -126,12 +126,12 @@ background-color: #5c5c5c;
 
 @media screen and (orientation: portrait) {
     .hero-image {
-        background-image: url("../img/HedshotPortrait.jpg");
-        background-position: 50% 0%;
-        background-size: auto 100vh;
+        background-image: url("../img/HeadshotSquare.jpg");
+        background-position: center;
+        background-size: cover;
         height: 100vh;
         background-repeat: no-repeat;
-        background-color: #2f2f2f;
+        background-color: transparent;
         position: relative;
         background-attachment: fixed;
     }
@@ -209,7 +209,7 @@ background-color: #5c5c5c;
 /* ----------------------------------------------------------------Projects page */
 
 .code-image {
-    background-image: url("../img/DALL-E_Python.webp");
+    background-image: url("../img/PythonGen.jpg");
     position: relative;
     background-position: center;
     background-size: cover;
