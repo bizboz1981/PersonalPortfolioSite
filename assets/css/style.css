@@ -170,23 +170,23 @@ background-color: #5c5c5c;
 }
 
 /* ------------------------------------------ timeline */
-.history-items {
-    background-color: orange !important;
-}
 
 .timeline-item {
     padding: 4em 1em 0em 2em;
     position: relative;
     color: #fafafa;
-    background-color: #ff00ff;
     border-left: 1px solid;
-    margin: 0 auto;
-    width: 50%;
+    margin-left:10%;
+    width: 70%;
 }
 
 .timeline-item p {
-    padding:0px 20px 20px 20px;
+    padding:0px 16px 16px 0px;
     margin: 0px;}
+
+.timeline-item h4 {
+    padding: 0px 16px 0px 0px;
+}
 
 .timeline-item::before {
     content: attr(data-dates);
@@ -279,6 +279,7 @@ li p {
 
 .form-container {
     min-height: 100vh;
+    width: 100vw;
     background-color: #2f2f2f;
 }
 
