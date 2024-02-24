@@ -78,6 +78,7 @@ background-color: #5c5c5c;
     animation: fadeIn 5s ease forwards;
 }
 
+/* principles of @keyframes animations from https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php */
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -128,6 +129,7 @@ background-color: #5c5c5c;
 
 /* ----------------------------------------------------------styles for portrait screens */
 
+/* principles of media queries taken from https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
 @media screen and (orientation: portrait) {
     .hero-image {
         background-image: url("../img/HeadshotSquare.jpg");
