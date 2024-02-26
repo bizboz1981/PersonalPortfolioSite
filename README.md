@@ -71,16 +71,75 @@ This is a simple contact form that allows the user to get in touch with Bill. Th
     <li>I will leverage JavaScript to programmatically interact with  <a href="https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28">GitHub's API</a>, enabling the automatic population and updating of the list showcasing my most recently starred repositories.</li>
     <li>I will use JavaScript to randomly highlight individual 'Buzz Words' in lime green for a few seconds.</li>
     <li>I will use JavaScript to recreate the parallax effect, as this is not supported in css in mobile browsers I tested.</li>
+    <li>I will, in due course, deploy to a custom URL.</li>
+    <li>Replace jpgs with more performant webp format images</li>
 </ul>
 
 # Design
 ## Colour Scheme
-The colour scheme uses a lot of grey. The main colour 
+The colour scheme uses a lot of grey. The main colour "brand-dark-gray" (#2f2f2f) was sampled from the hero image on the home page. The inspiration of pairing this with the secondary brand colour green ("brand-lime": #00ff00) and the tertiary pink ("brand-pink": #ff00ff) was taken from <a href="https://www.schemecolor.com/pink-grey-green.php">here</a>. Contrast was checked for accessibility using <a href="https://webaim.org/resources/contrastchecker/">WebAIM's contrast checker</a>. The green and pink are used sparingly to add a pop of colour and to make the site feel modern and fresh. The green is used for the navbar, the hero image on the home page, the 'Buzz Words' on the home page, the progress bars on the About page and the 'Send' button on the Contact page. The pink is used for the 'Buzz Word' on the home page and the 'Send' button on the Contact page. The grey is used for the background of the site and the text. The white is used for the text and the progress bars on the About page.
 
 # Technologies Used
+## Languages
+<ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Mardown</li>
+</ul>
+
+## Applications
+<ul>
+    <li><a href="https://git-scm.com">Git</a> - for version control</li>
+    <li><a href="https://github.com">GitHub</a> - for version control and website hosting</li>
+    <li><a href="https://code.visualstudio.com">Visual Studio Code</a> - for coding the project and managing the files</li>
+    <li><a href="https://www.adobe.com/uk/products/photoshop.html">Adobe Photoshop</a> - for photo editing</li>
+    <li><a href="https://openai.com/dall-e-3">OpenAI's DALL-E</a> - for image generation</li>
+</ul>
+
+## Frameworks, Libraries & CDNs
+<ul>
+    <li><a href="https://fonts.google.com/">Google Fonts</a> - 'Exo' is used for headings for its simple, modern look and the monospade 'Anonymous Pro' is used for body text for it's 'codey' feel.</li>
+    <li><a href="https://fontawesome.com/">Font Awesome</a> - Font Awesome is used for social media icons.</li>
+    <li><a href="https://getbootstrap.com">Bootstrap 5</a> - Bootstrap 5 is used extensively througout the project for responsiveness and for providing template code for several elements. However, all Bootstrap elements are styled with custom css.</li>
+</ul>
+
+## Other Tech & VS Code Extensions
+<ul>
+    <li><a href="https://github.com/features/copilot">GitHub CoPilot</a> - I used this for checking code, troubleshooting and debugging - <u>not for writing code.</u></li>
+    <li><a href="https://code.visualstudio.com/docs/editor/emmet">Emmet</a> - for boilerplate html and shortcuts.</li>
+    <li><a href="https://marketplace.visualstudio.com/items?itemName=biomejs.biome">Biome</a> - for code formatting and code completion ('intellisense').</li>
+</ul>
+
+## Learning Resources
+I have credited specific resources throughout the code, but during my learning journey I have used the following resources extensively and my whole project has been inspired by elements of them all:
+<ul>
+    <li><a href="http://chat.openai.com">Chat GPT</a> - I have used Chat GPT to explain concepts to me, and to help me use VS Code and the terminal more efficiently. I have also used it to explain code snippets from other sources in greater detail. <u>I have specifically not used Chat GPT to write code for me.</u> All source code in the project is credited where approrpriate.</li>
+    <li><a href="https://www.w3schools.com">W3 Schools</a> - used extensively for inspiration, problem solving and occasionally for template code.</li>
+    <li><a href="https://stackoverflow.com">Stack Overflow</a> - primarily for troubleshooting issues</li>    
+    <li><a href="https://www.codecademy.com">Codecademy</a> - as a user of Codecademy for a number of years, I must credit this site for any background knowledge I may have had.</li>cha
+</ul>
 
 # Testing
+## User Stories
+
+## Manual Testing
+### Lighthouse
+I used the Lighthouse tool in Chrome DevTools to test the site's performance, accessibility, best practices and SEO. The results were as follows: 98% | 100% |100% |100% | NA. The only area for improvement was the 'Performance' score, which was 98%. This was partly due to the size and performance of the hero image. I plan to change this to webp format.
+
+### Devices
+I tested the site on a number of devices and browsers, including:
+- iPad Air (Safari):
+- iPhone 14 Pro (Safari | Firefox | Chrome): Works well on all browsers. My iPhone, along with many other smartphones, does not support the parallax effect, so I will need to address this in future updates with JavaScript.
+
+## Online Validation Services
+<ul>
+    <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a> - all colours used passed the contrast checker. Apart from white on brand dark grey (which has a contrast ration of 13.38:1) the main contrast is brand lime green on brand grey which has a score of almost 10:1.</li>
+    <li><a href="https://validator.w3.org">HTML Validator</a> - all pages received a clean bill of health, with no errors or warnings to show</li>
+    <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> - when scanning the URL of the site, the validator finds a surprising number of errors and warnings. However, all of these are associated with Bootstrap and nothing to do with the custom css (in fact, the <a href="https://codeinstitute.net">Code Institute site</a>) generates a similar number of Bootstrap errors. The custom css (on direct input) has no errors.</li>
+    <li><a href="https://accessibe.com/accessscan">accessiBe</a> - accessibility scan informs me that the website is mostly compliant, but did suggest some areas for improvement, which I will address in future updates., Interestingly, the the <a href="https://codeinstitute.net">Code Institute site</a> fails on many of the same elements, suggesting that 'accessibility' is more of an ongoing commitment rather than a realistic, perfect end-state.</li>
+</ul>
 
 # Deployment
+My [site](https://bizboz1981.github.io/PersonalPortfolioSite/) is deployed to [GitHub Pages](https://pages.github.com). 
 
 # Credits

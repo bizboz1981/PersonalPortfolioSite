@@ -155,7 +155,19 @@ background-color: var(--progress-bar-dark-gray);
         background-attachment: fixed;
     }
 }
-
+/* ----------------------------------------------------------styles for landscape phones */
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .hero-image {
+        background-image: url("../img/HeadshotLandscape.jpg");
+        background-position: 50% 0%;
+        background-size: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        position: relative;
+        background-attachment: fixed;
+    }
+}
         
 /* ----------------------------------------------------------------------about page */
 
