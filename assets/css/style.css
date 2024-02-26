@@ -1,183 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* ---------------------------------------------------------------------------colours */
 /* Brand colours */
 /* Idea inspired by: https://www.smashingmagazine.com/2020/08/application-color-schemes-css-custom-properties/ */
 
 :root {
-    --brand-lime: #00ff00;
-    --brand-pink: #ff00ff;
-    --brand-dark-gray: #2f2f2f;
-    --brand-light-gray: #ebebeb;
-    --progress-bar-gray: #929292;
-    --progress-bar-dark-gray: #5c5c5c;
-    --list-bg-color: #404040;
+  --brand-lime: #00ff00;
+  --brand-pink: #ff00ff;
+  --brand-dark-gray: #2f2f2f;
+  --brand-light-gray: #ebebeb;
+  --progress-bar-gray: #929292;
+  --progress-bar-dark-gray: #5c5c5c;
+  --list-bg-color: #404040;
 }
 
 /* backgrounds*/
 
 .light-background {
-    background-color: var(--brand-light-gray);
+  background-color: var(--brand-light-gray);
 }
 
 .dark-background {
-    background-color: var(--brand-dark-gray);
-    color: white;
+  background-color: var(--brand-dark-gray);
+  color: white;
 }
 
 /* brand colour lime */
 .active,
 .fa {
-    color: var(--brand-lime) !important;
+  color: var(--brand-lime) !important;
 }
 
 .fa:hover {
-    color: var(--brand-pink) !important;
+  color: var(--brand-pink) !important;
 }
 
 /* progress bar background grey */
 .bar-bg-color {
-    background-color: var(--list-bg-color);
+  background-color: var(--list-bg-color);
 }
 
 .progress-bar-green {
-    background-color: var(--brand-lime);
-    color: black;
+  background-color: var(--brand-lime);
+  color: black;
 }
 
 .progress-bar-pink {
-    background-color: var(--brand-pink);
+  background-color: var(--brand-pink);
 }
 
 .progress-bar-gray {
-    background-color: var(--progress-bar-gray);
+  background-color: var(--progress-bar-gray);
 }
 
 .progress-bar-dark-gray {
-    background-color: var(--progress-bar-dark-gray);
+  background-color: var(--progress-bar-dark-gray);
 }
 
 .btn-get-code {
-    background-color: var(--brand-lime);
+  background-color: var(--brand-lime);
 }
 
-.btn-get-code>a {
-    color: black;
-    text-decoration: none;
+.btn-get-code > a {
+  color: black;
+  text-decoration: none;
 }
 
 .btn-get-code:hover {
-    background-color: var(--brand-pink);
-    color: black;
-    text-decoration: none;
+  background-color: var(--brand-pink);
+  color: black;
+  text-decoration: none;
 }
 
 .list-bg-color {
-    background-color: var(--list-bg-color);
-    color: white;
+  background-color: var(--list-bg-color);
+  color: white;
 }
 
 /* ----------------------------------------------------------------------------home page */
 .fade-in-bg {
-    background-color: var(--brand-dark-gray);
+  background-color: var(--brand-dark-gray);
 }
 
 .hero-image {
-    background-image: url("../img/HeadshotLandscape.jpg");
-    position: relative;
-    background-attachment: fixed;
-    height: 100vh;
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-    opacity: 0;
-    animation: fadeIn 5s ease forwards;
+  background-image: url("../img/HeadshotLandscape.jpg");
+  position: relative;
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeIn 5s ease forwards;
 }
 
 /* principles of @keyframes animations from https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php */
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .buzz-words {
-    background-color: var(--brand-dark-gray);
-    display: flex;
-    padding-left: 2rem;
-    font-family: "anonymous pro", monospace;
-    color: white;
-    height: auto;
-    font-size: x-large;
-    line-height: 150%;
+  background-color: var(--brand-dark-gray);
+  display: flex;
+  padding-left: 2rem;
+  font-family: "anonymous pro", monospace;
+  color: white;
+  height: auto;
+  font-size: x-large;
+  line-height: 150%;
 }
-
 
 .section-heading h1,
 h2,
 h3,
 h4 {
-    font-family: "exo", sans-serif;
-    padding: 1rem;
+  font-family: "exo", sans-serif;
+  padding: 1rem;
 }
 
 .section-heading p {
-    font-family: "anonymous pro", monospace;
-    padding-left: 1.5rem;
-    padding-bottom: 1rem;
+  font-family: "anonymous pro", monospace;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 /* social-media */
 .social-media {
-    width: 50%;
-    margin-bottom: 50px;
-    margin: auto;
-    padding: 1em;
-    text-align: center;
-    background-color: var(--brand-dark-gray);
+  width: 50%;
+  margin-bottom: 50px;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  background-color: var(--brand-dark-gray);
 }
 
 .social-links {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .fa {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
-
 
 /* ----------------------------------------------------------styles for portrait screens */
 
 /* principles of media queries taken from https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
 @media screen and (orientation: portrait) {
-    .hero-image {
-        background-image: url("../img/HeadshotSquare.jpg");
-        background-position: calc(50% - 20px) 0%;
-        background-size: auto 100vh;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        position: relative;
-        background-attachment: fixed;
-    }
+  .hero-image {
+    background-image: url("../img/HeadshotSquare.jpg");
+    background-position: calc(50% - 20px) 0%;
+    background-size: auto 100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: relative;
+    background-attachment: fixed;
+  }
 }
 
 /* ----------------------------------------------------------styles for landscape phones */
 @media screen and (orientation: landscape) and (max-width: 768px) {
-    .hero-image {
-        background-image: url("../img/HeadshotLandscape.jpg");
-        background-position: center right;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        position: relative;
-        background-attachment: fixed;
-    }
+  .hero-image {
+    background-image: url("../img/HeadshotLandscape.jpg");
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: relative;
+    background-attachment: fixed;
+  }
 }
 
 /* ----------------------------------------------------------------------about page */
@@ -185,189 +183,189 @@ h4 {
 /* ---------------------------------------------------------progress bars */
 
 .progress-section {
-    top: 50%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .progress-bars {
-    margin-bottom: 50px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+  margin-bottom: 50px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .bar-bg-color {
-    margin-bottom: 20px;
-    height: 25px;
+  margin-bottom: 20px;
+  height: 25px;
 }
 
 .progress-text {
-    text-align: left;
-    padding-left: 1rem;
-    font-weight: bold;
-    font-family: "anonymous pro", monospace;
-    letter-spacing: 2px;
-    font-size: 1.5em;
+  text-align: left;
+  padding-left: 1rem;
+  font-weight: bold;
+  font-family: "anonymous pro", monospace;
+  letter-spacing: 2px;
+  font-size: 1.5em;
 }
 
 /* ------------------------------------------ timeline */
 
 .timeline-item {
-    padding: 4em 1em 0em 2em;
-    position: relative;
-    color: #fafafa;
-    border-left: 1px solid;
-    margin-left: 10%;
-    width: 90%;
+  padding: 4em 1em 0em 2em;
+  position: relative;
+  color: #fafafa;
+  border-left: 1px solid;
+  margin-left: 10%;
+  width: 90%;
 }
 
 .timeline-item p {
-    padding: 0px 16px 16px 0px;
-    margin: 0px;
+  padding: 0px 16px 16px 0px;
+  margin: 0px;
 }
 
 .timeline-item h4 {
-    padding: 0px 16px 0px 0px;
+  padding: 0px 16px 0px 0px;
 }
 
 .timeline-item::before {
-    content: attr(data-dates);
-    position: absolute;
-    left: 2.5em;
-    top: 3em;
-    display: block;
-    font-family: "Exo", sans-serif;
-    font-weight: 500;
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
+  content: attr(data-dates);
+  position: absolute;
+  left: 2.5em;
+  top: 3em;
+  display: block;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
 }
 
 .timeline-item::after {
-    width: 12px;
-    height: 12px;
-    display: block;
-    top: 2.4em;
-    position: absolute;
-    left: -6px;
-    border-radius: 12px;
-    content: '';
-    background: var(--brand-lime);
+  width: 12px;
+  height: 12px;
+  display: block;
+  top: 2.4em;
+  position: absolute;
+  left: -6px;
+  border-radius: 12px;
+  content: "";
+  background: var(--brand-lime);
 }
 
 /* ----------------------------------------------------------------Projects page */
 
 .code-image {
-    background-image: url("../img/PythonGen.jpg");
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../img/PythonGen.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
-    .code-image {
-        display: none;
-    }
+  .code-image {
+    display: none;
+  }
 
-    .project-list {
-        padding: 0px 0px 50px 00px;
-    }
+  .project-list {
+    padding: 0px 0px 50px 00px;
+  }
 }
 
 .project-list {
-    margin: 0px 25px 25px 25px;
+  margin: 0px 25px 25px 25px;
 }
 
 .prog-lang-csharp {
-    font-family: exo, sans-serif;
-    color: lime;
-    font-weight: bold;
+  font-family: exo, sans-serif;
+  color: lime;
+  font-weight: bold;
 }
 
 .prog-lang-py,
 .prog-lang-html,
 .prog-lang-css,
 .prog-lang-js {
-    color: lime;
-    font-size: 24px;
+  color: lime;
+  font-size: 24px;
 }
 
 li p {
-    font-family: "anonymous pro", monospace;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    font-size: 20px;
+  font-family: "anonymous pro", monospace;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
 }
 
 /* -----------------------------------------------------------------contact page */
 
 .centre-form {
-    position: relative;
-    margin: 0 auto;
-    background-color: var(--brand-dark-gray);
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--brand-dark-gray);
 }
 
 .contact-form {
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: transparent;
-    color: white;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: transparent;
+  color: white;
 }
 
 .section-heading-contact h1,
 .section-heading-contact p {
-    font-family: "exo", sans-serif;
-    padding-left: 0px;
-    margin-left: 0px;
-    color: white;
+  font-family: "exo", sans-serif;
+  padding-left: 0px;
+  margin-left: 0px;
+  color: white;
 }
 
 .form-container {
-    min-height: 100vh;
-    width: 100vw;
-    background-color: var(--brand-dark-gray);
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--brand-dark-gray);
 }
 
 /* ------------------------------------------------MEDIA QUERIES AT BOTTOM OF CSS */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    #breakpoints::before {
-        content: "Small screens and up (>576px Landscape phones) - 'sm'";
-        background-color: aquamarine;
-    }
+  #breakpoints::before {
+    content: "Small screens and up (>576px Landscape phones) - 'sm'";
+    background-color: aquamarine;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    #breakpoints::before {
-        content: "Medium screens and up (>768px Tablets) - 'md'";
-        background-color: aquamarine;
-    }
+  #breakpoints::before {
+    content: "Medium screens and up (>768px Tablets) - 'md'";
+    background-color: aquamarine;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #breakpoints::before {
-        content: "Large screens and up (>992px Desktops) - 'lg'";
-        background-color: aquamarine;
-    }
+  #breakpoints::before {
+    content: "Large screens and up (>992px Desktops) - 'lg'";
+    background-color: aquamarine;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #breakpoints::before {
-        content: "Extra Large screens and up (>1200px Large Desktops) - 'xl'";
-        background-color: aquamarine;
-    }
+  #breakpoints::before {
+    content: "Extra Large screens and up (>1200px Large Desktops) - 'xl'";
+    background-color: aquamarine;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    #breakpoints::before {
-        content: "Extra Extra Large screens and up (>1400px Larger Desktops) - 'xxl'";
-        background-color: aquamarine;
-    }
+  #breakpoints::before {
+    content: "Extra Extra Large screens and up (>1400px Larger Desktops) - 'xxl'";
+    background-color: aquamarine;
+  }
 }
