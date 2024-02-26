@@ -13,6 +13,7 @@
     --progress-bar-dark-gray: #5c5c5c;
     --list-bg-color: #404040;
 }
+
 /* backgrounds*/
 
 .light-background {
@@ -25,7 +26,8 @@
 }
 
 /* brand colour lime */
-.active, .fa {
+.active,
+.fa {
     color: var(--brand-lime) !important;
 }
 
@@ -39,20 +41,20 @@
 }
 
 .progress-bar-green {
-background-color: var(--brand-lime);
-color: black;
+    background-color: var(--brand-lime);
+    color: black;
 }
 
 .progress-bar-pink {
-background-color: var(--brand-pink);
+    background-color: var(--brand-pink);
 }
 
 .progress-bar-gray {
-background-color: var(--progress-bar-gray);
+    background-color: var(--progress-bar-gray);
 }
 
 .progress-bar-dark-gray {
-background-color: var(--progress-bar-dark-gray);
+    background-color: var(--progress-bar-dark-gray);
 }
 
 .btn-get-code {
@@ -74,6 +76,7 @@ background-color: var(--progress-bar-dark-gray);
     background-color: var(--list-bg-color);
     color: white;
 }
+
 /* ----------------------------------------------------------------------------home page */
 .fade-in-bg {
     background-color: var(--brand-dark-gray);
@@ -93,8 +96,13 @@ background-color: var(--progress-bar-dark-gray);
 
 /* principles of @keyframes animations from https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php */
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .buzz-words {
@@ -109,7 +117,10 @@ background-color: var(--progress-bar-dark-gray);
 }
 
 
-.section-heading h1, h2, h3, h4 {
+.section-heading h1,
+h2,
+h3,
+h4 {
     font-family: "exo", sans-serif;
     padding: 1rem;
 }
@@ -155,6 +166,7 @@ background-color: var(--progress-bar-dark-gray);
         background-attachment: fixed;
     }
 }
+
 /* ----------------------------------------------------------styles for landscape phones */
 @media screen and (orientation: landscape) and (max-width: 768px) {
     .hero-image {
@@ -167,7 +179,7 @@ background-color: var(--progress-bar-dark-gray);
         background-attachment: fixed;
     }
 }
-        
+
 /* ----------------------------------------------------------------------about page */
 
 /* ---------------------------------------------------------progress bars */
@@ -186,7 +198,7 @@ background-color: var(--progress-bar-dark-gray);
 }
 
 .bar-bg-color {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     height: 25px;
 }
 
@@ -206,13 +218,14 @@ background-color: var(--progress-bar-dark-gray);
     position: relative;
     color: #fafafa;
     border-left: 1px solid;
-    margin-left:10%;
+    margin-left: 10%;
     width: 90%;
 }
 
 .timeline-item p {
-    padding:0px 16px 16px 0px;
-    margin: 0px;}
+    padding: 0px 16px 16px 0px;
+    margin: 0px;
+}
 
 .timeline-item h4 {
     padding: 0px 16px 0px 0px;
@@ -257,6 +270,7 @@ background-color: var(--progress-bar-dark-gray);
     .code-image {
         display: none;
     }
+
     .project-list {
         padding: 0px 0px 50px 00px;
     }
@@ -272,7 +286,10 @@ background-color: var(--progress-bar-dark-gray);
     font-weight: bold;
 }
 
-.prog-lang-py, .prog-lang-html, .prog-lang-css, .prog-lang-js {
+.prog-lang-py,
+.prog-lang-html,
+.prog-lang-css,
+.prog-lang-js {
     color: lime;
     font-size: 24px;
 }
@@ -283,6 +300,7 @@ li p {
     margin-bottom: 0px;
     font-size: 20px;
 }
+
 /* -----------------------------------------------------------------contact page */
 
 .centre-form {
@@ -294,7 +312,7 @@ li p {
 .contact-form {
     margin: 0 auto;
     padding: 1rem;
-    background-color:transparent;
+    background-color: transparent;
     color: white;
 }
 

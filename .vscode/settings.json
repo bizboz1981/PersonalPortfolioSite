@@ -28,4 +28,7 @@
       "editor.defaultFormatter": "vscode.html-language-features"
    },
    "liveServer.settings.port": 5502,
+   "[css]": {
+      "editor.defaultFormatter": "vscode.css-language-features"
+   },
 }
