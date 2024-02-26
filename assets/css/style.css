@@ -159,9 +159,8 @@ background-color: var(--progress-bar-dark-gray);
 @media screen and (orientation: landscape) and (max-width: 768px) {
     .hero-image {
         background-image: url("../img/HeadshotLandscape.jpg");
-        background-position: 50% 0%;
+        background-position: center right;
         background-size: cover;
-        height: 100vh;
         background-repeat: no-repeat;
         background-color: transparent;
         position: relative;
