@@ -83,7 +83,7 @@
 }
 
 .hero-image {
-  background-image: url("../img/HeadshotLandscape.jpg");
+  background-image: url("../img/HeadshotLandscape.webp");
   position: relative;
   background-attachment: fixed;
   height: 100vh;
@@ -154,7 +154,7 @@ h4 {
 /* principles of media queries taken from https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
 @media screen and (orientation: portrait) {
   .hero-image {
-    background-image: url("../img/HeadshotSquare.jpg");
+    background-image: url("../img/HeadshotSquare.webp");
     background-position: calc(50% - 20px) 0%;
     background-size: auto 100vh;
     height: 100vh;
@@ -168,9 +168,9 @@ h4 {
 /* ----------------------------------------------------------styles for landscape phones */
 @media (orientation: landscape) and (max-width: 768px) {
   .hero-image {
-    background-image: url("../img/HeadshotLandscape.jpg");
+    background-image: url("../img/HeadshotLandscape.webp");
     background-position: top center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -254,7 +254,7 @@ h4 {
 /* ----------------------------------------------------------------Projects page */
 
 .code-image {
-  background-image: url("../img/PythonGen.jpg");
+  background-image: url("../img/PythonGen.webp");
   position: relative;
   background-position: center;
   background-size: cover;
