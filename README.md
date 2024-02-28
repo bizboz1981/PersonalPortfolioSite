@@ -70,9 +70,8 @@ This is a simple contact form that allows the user to get in touch with Bill. Th
 <ul>
     <li>I will leverage JavaScript to programmatically interact with  <a href="https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28">GitHub's API</a>, enabling the automatic population and updating of the list showcasing my most recently starred repositories.</li>
     <li>I will use JavaScript to randomly highlight individual 'Buzz Words' in lime green for a few seconds.</li>
-    <li>I will use JavaScript to recreate the parallax effect, as this is not supported in css in mobile browsers I tested.</li>
+    <li>I will use JavaScript to recreate the parallax effect, as this is not supported in css in mobile browsers I tested (apparently due the the <a href="https://forums.developer.apple.com/forums/thread/99883">high repaint cost</a>).</li>
     <li>I will, in due course, deploy to a custom URL.</li>
-    <li>Replace jpgs with more performant webp format images</li>
 </ul>
 
 # Design
@@ -94,6 +93,7 @@ The colour scheme uses a lot of grey. The main colour "brand-dark-gray" (#2f2f2f
     <li><a href="https://code.visualstudio.com">Visual Studio Code</a> - for coding the project and managing the files</li>
     <li><a href="https://www.adobe.com/uk/products/photoshop.html">Adobe Photoshop</a> - for photo editing</li>
     <li><a href="https://openai.com/dall-e-3">OpenAI's DALL-E</a> - for image generation</li>
+    <li><a href="https://convertio.co/">Convertio</a> - for converting images to webp format</li>
 </ul>
 
 ## Frameworks, Libraries & CDNs
@@ -123,21 +123,90 @@ I have credited specific resources throughout the code, but during my learning j
 ## User Stories
 
 ## Manual Testing
-### Lighthouse
-I used the Lighthouse tool in Chrome DevTools to test the site's performance, accessibility, best practices and SEO. The results were as follows: 98% | 100% |100% |100% | NA. The only area for improvement was the 'Performance' score, which was 98%. This was partly due to the size and performance of the hero image. I plan to change this to webp format.
+### Features Testing
+| Feature                | Test Case                                     | Outcome                                                       |
+| ---------------------- | --------------------------------------------- | ------------------------------------------------------------- |
+| Logo                   | Click on the Logo                             | User taken to homepage                                        |
+| Navbar > Homepage      | Click the Home link on each page              | User brought to homepage successfully                         |
+| Navbar > About Page    | Click the About link on each page             | User brought to About page successfully                       |
+| Navbar > Projects Page | Click the Projects link on each page          | User brought to Projects page successfully                    |
+| Navbar > Contact Page  | Click the Contact link on each page           | User brought to Contact page successfully                     |
+| Social Media Links     | Click on each social media icon in the footer | User taken to the relevant social media page                  |
+| Contact Form           | Fill in the form and click 'Send'             | Form data is sent to the correct server and confirmed to user |
 
-### Devices
-I tested the site on a number of devices and browsers, including:
-- iPad Air (Safari):
-- iPhone 14 Pro (Safari | Firefox | Chrome): Works well on all browsers. My iPhone, along with many other smartphones, does not support the parallax effect, so I will need to address this in future updates with JavaScript.
+### Device & Browser Responsiveness Testing
 
-## Online Validation Services
+| Device/Browser        | Appearance | Responsiveness | Issues                        |
+| --------------------- | ---------- | -------------- | ----------------------------- |
+| iPad Air/Safari       | Good       | Good           | None                          |
+| iPhone 14 Pro/Safari  | Good       | Good           | Parallax effect not supported |
+| iPhone 14 Pro/Firefox | Good       | Good           | Parallax effect not supported |
+| iPhone 14 Pro/Chrome  | Good       | Good           | Parallax effect not supported |
+| Macbook Air/Safari    | Good       | Good           | None                          |
+| Macbook Air/Chrome    | Good       | Good           | None                          |
+| Macbook Air/Firefox   | Good       | Good           | None                          |
+| Windows 10/Chrome     | Good       | Good           | None                          |
+| Windows 10/Firefox    | Good       | Good           | None                          |
+| Windows 10/Edge       | Good       | Good           | None                          |
+
+In addition to the above, I have tested extensively in the Chrome DevTools device emulator and have tested the site on a number of other devices and browsers. The site is fully responsive and works well on all devices and browsers I have tested. The only issues I encountered were with the parallax effect, which is not supported on my iPhone 14 Pro, and I will need to address this in future updates with JavaScript. To solve the issue for now, I have set `background-attachment: scroll` in the media query for mobile devices.
+
+```
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #breakpoints::before {
+    content: "Small screens and up (>576px Landscape phones) - 'sm'";
+    background-color: aquamarine;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #breakpoints::before {
+    content: "Medium screens and up (>768px Tablets) - 'md'";
+    background-color: aquamarine;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #breakpoints::before {
+    content: "Large screens and up (>992px Desktops) - 'lg'";
+    background-color: aquamarine;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #breakpoints::before {
+    content: "Extra Large screens and up (>1200px Large Desktops) - 'xl'";
+    background-color: aquamarine;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+  #breakpoints::before {
+    content: "Extra Extra Large screens and up (>1400px Larger Desktops) - 'xxl'";
+    background-color: aquamarine;
+  }
+}
+```
+
+
+### Online Validation Services
 <ul>
     <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a> - all colours used passed the contrast checker. Apart from white on brand dark grey (which has a contrast ration of 13.38:1) the main contrast is brand lime green on brand grey which has a score of almost 10:1.</li>
     <li><a href="https://validator.w3.org">HTML Validator</a> - all pages received a clean bill of health, with no errors or warnings to show</li>
     <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> - when scanning the URL of the site, the validator finds a surprising number of errors and warnings. However, all of these are associated with Bootstrap and nothing to do with the custom css (in fact, the <a href="https://codeinstitute.net">Code Institute site</a>) generates a similar number of Bootstrap errors. The custom css (on direct input) has no errors.</li>
     <li><a href="https://accessibe.com/accessscan">accessiBe</a> - accessibility scan informs me that the website is mostly compliant, but did suggest some areas for improvement, which I will address in future updates., Interestingly, the the <a href="https://codeinstitute.net">Code Institute site</a> fails on many of the same elements, suggesting that 'accessibility' is more of an ongoing commitment rather than a realistic, perfect end-state.</li>
 </ul>
+
+### Lighthouse
+I used the Lighthouse tool in Chrome DevTools to test the site's performance, accessibility, best practices and SEO. The results were as follows: 98% | 100% |100% |100% | NA. The only area for improvement was the 'Performance' score, which was 98%. This was partly due to the size and performance of the hero image. I plan to change this to webp format.
+
+### Bugs
 
 # Deployment
 My [site](https://bizboz1981.github.io/PersonalPortfolioSite/) is deployed to [GitHub Pages](https://pages.github.com). 
