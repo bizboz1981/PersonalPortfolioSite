@@ -17,3 +17,4 @@ vscode:
     - tinkertrain.theme-panda
     - biomejs.biome
     - gitpod.gitpod-desktop
+    - esbenp.prettier-vscode
