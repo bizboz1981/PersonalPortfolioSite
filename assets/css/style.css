@@ -169,7 +169,7 @@ h4 {
 @media (orientation: landscape) and (max-width: 768px) {
   .hero-image {
     background-image: url("../img/HeadshotLandscape.jpg");
-    background-position: center center;
+    background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
   }
