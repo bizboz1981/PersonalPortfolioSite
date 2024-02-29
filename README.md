@@ -216,3 +216,9 @@ I used the Lighthouse tool in Chrome DevTools to test the site's performance, ac
 My [site](https://bizboz1981.github.io/PersonalPortfolioSite/) is deployed to [GitHub Pages](https://pages.github.com). 
 
 # Credits
+In addition to the technologies used, I would like to credit the following for inspiration and assistance:
+<ul>
+    <li>My mentor, Jack Wachira</li>
+    <li><a href="https://www.smashingmagazine.com/2020/08/application-color-schemes-css-custom-properties/">Smashing Magazine</a></li>
+    <li><a href="https://elainebroche-dev.github.io/ms1-thrive/">Thrive - Juices & Smoothies</a> - a Code Institute Project</li>
+    <li><a href="https://www.garysheng.com">Gary Sheng</a></li>
