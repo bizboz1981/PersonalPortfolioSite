@@ -1,158 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bill Saunders, software developer: personal portfolio website - projects page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bill Saunders, software developer: personal portfolio website - projects page"
+    />
     <title>Bill Saunders - Projects</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
-    <span id="breakpoints" style="color:black"></span>
+  <body>
+    <span id="breakpoints" style="color: black"></span>
     <!-- bootstrap nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" data-bs-theme="dark">
-        <div class="container">
-            <a class="navbar-brand" href="https://github.com/bizboz1981" target="_blank">Bill Saunders</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html" target="_blank"
+          ><i class="fa-solid fa-apple-whole"></i> &nbsp Bill Saunders</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- main content -->
 
     <!-- links to favourite github projects -->
     <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 order-md-2 dark-background">
-                <div class="row">
-                    <!-- This list template was sourced from https://getbootstrap.com/docs/5.0/components/list-group/ and has custom styling -->
-                    <div class="col section-heading">
-                        <h1>Projects</h1>
-                        <p>Here are some of my favourite projects from my GitHub repository. Click on the links to view
-                            the code and the README files.</p>
-                        <ol class="list-group list-group-numbered project-list">
-                            <li class="list-group-item d-flex justify-content-between align-items-start list-bg-color">
-                                <div class="ms-2 me-auto">
-                                    <div class="prog-lang-csharp">C#</div>
-                                    <p>Alumni Engagement Score Calculator App</p>
-                                </div>
-                                <span class="badge btn-get-code rounded-pill"><a
-                                        href="https://github.com/bizboz1981/AlumniEngagementScore.git">Get the
-                                        Code</a></span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start list-bg-color">
-                                <div class="ms-2 me-auto">
-                                    <div class="prog-lang-py"><i class="fa-brands fa-python"></i></div>
-                                    <p>Analysis of Category 5 Hurricanes</p>
-                                </div>
-                                <span class="badge btn-get-code rounded-pill"><a
-                                        href="https://github.com/bizboz1981/Hurricane-Analysis.git">Get the
-                                        Code</a></span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start list-bg-color">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold"><i class="fa-brands fa-html5 fw-bold prog-lang-html"></i> | <i
-                                            class="fa-brands fa-css3-alt prog-lang-css"></i></div>
-                                    <p>Code Institute <em>Love Running</em> Project</p>
-                                </div>
-                                <span class="badge btn-get-code rounded-pill"><a
-                                        href="https://github.com/bizboz1981/Love-Running.git">Get the Code</a></span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start list-bg-color">
-                                <div class="ms-2 me-auto">
-                                    <div class="prog-lang-csharp">C# | <i class="fa-solid fa-database"></i></div>
-                                    <p>Music Database Project in C# with SQL and LINQ</p>
-                                </div>
-                                <span class="badge btn-get-code rounded-pill"><a
-                                        href="https://github.com/bizboz1981/SQLlinqMusic.git">Get the Code</a></span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start list-bg-color">
-                                <div class="ms-2 me-auto">
-                                    <div class="prog-lang-py"><i class="fa-brands fa-python"></i></div>
-                                    <p>API to Resubscribe Alumni to Dot Digital Mailing List</p>
-                                </div>
-                                <span class="badge btn-get-code rounded-pill"><a
-                                        href="https://github.com/bizboz1981">Get the Code</a></span>
-                            </li>
-                        </ol>
+      <div class="row">
+        <div class="col-md-8 order-md-2 dark-background">
+          <div class="row">
+            <!-- This list template was sourced from https://getbootstrap.com/docs/5.0/components/list-group/ and has custom styling -->
+            <div class="col section-heading">
+              <h1>Projects</h1>
+              <p>
+                Here are some of my favourite projects from my GitHub
+                repository. Click on the links to view the code and the README
+                files.
+              </p>
+              <ol class="list-group list-group-numbered project-list">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start list-bg-color"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="prog-lang-csharp">C#</div>
+                    <p>Alumni Engagement Score Calculator App</p>
+                  </div>
+                  <span class="badge btn-get-code rounded-pill"
+                    ><a
+                      href="https://github.com/bizboz1981/AlumniEngagementScore.git"
+                      >Get the Code</a
+                    ></span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start list-bg-color"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="prog-lang-py">
+                      <i class="fa-brands fa-python"></i>
                     </div>
-                </div>
+                    <p>Analysis of Category 5 Hurricanes</p>
+                  </div>
+                  <span class="badge btn-get-code rounded-pill"
+                    ><a
+                      href="https://github.com/bizboz1981/Hurricane-Analysis.git"
+                      >Get the Code</a
+                    ></span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start list-bg-color"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">
+                      <i class="fa-brands fa-html5 fw-bold prog-lang-html"></i>
+                      | <i class="fa-brands fa-css3-alt prog-lang-css"></i>
+                    </div>
+                    <p>Code Institute <em>Love Running</em> Project</p>
+                  </div>
+                  <span class="badge btn-get-code rounded-pill"
+                    ><a href="https://github.com/bizboz1981/Love-Running.git"
+                      >Get the Code</a
+                    ></span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start list-bg-color"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="prog-lang-csharp">
+                      C# | <i class="fa-solid fa-database"></i>
+                    </div>
+                    <p>Music Database Project in C# with SQL and LINQ</p>
+                  </div>
+                  <span class="badge btn-get-code rounded-pill"
+                    ><a href="https://github.com/bizboz1981/SQLlinqMusic.git"
+                      >Get the Code</a
+                    ></span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start list-bg-color"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="prog-lang-py">
+                      <i class="fa-brands fa-python"></i>
+                    </div>
+                    <p>API to Resubscribe Alumni to Dot Digital Mailing List</p>
+                  </div>
+                  <span class="badge btn-get-code rounded-pill"
+                    ><a href="https://github.com/bizboz1981"
+                      >Get the Code</a
+                    ></span
+                  >
+                </li>
+              </ol>
             </div>
-            <!-- This image was generateed by DALL-E (ChatGPT) -->
-            <div class="col-md-4 order-md-1 code-image" role="img"
-                aria-label="AI-generated image of a computer screen with python-like code">
-            </div>
+          </div>
         </div>
+        <!-- This image was generateed by DALL-E (ChatGPT) -->
+        <div
+          class="col-md-4 order-md-1 code-image"
+          role="img"
+          aria-label="AI-generated image of a computer screen with python-like code"
+        ></div>
+      </div>
     </section>
     <section class="container-fluid">
-        <div class="row">
-            <div class="col-12 section-heading light-background">
-                <h1>Bill's Approach to Tech</h1>
-                <p>For Bill, technology is about solving real-world problems: extracting insights from data,
-                    resubscribing people to a mailing list at the click of a button, and more. But for him, it's also an
-                    end in itself. The beauty of a piece of elegant code, the visual appeal of well-presented data, and
-                    the seamless functionality of a well-designed application represent the artistry in technology. Bill
-                    approaches every project with a blend of pragmatism and creativity, always aiming to find the sweet
-                    spot where functionality meets beauty. His work is a testament to the belief that technology, at its
-                    best, is both a tool for improvement and a form of expression, embodying the perfect balance between
-                    solving problems and celebrating the inherent beauty in the solutions.</p>
-            </div>
+      <div class="row">
+        <div class="col-12 section-heading light-background">
+          <h1>Bill's Approach to Tech</h1>
+          <p>
+            For Bill, technology is about solving real-world problems:
+            extracting insights from data, resubscribing people to a mailing
+            list at the click of a button, and more. But for him, it's also an
+            end in itself. The beauty of a piece of elegant code, the visual
+            appeal of well-presented data, and the seamless functionality of a
+            well-designed application represent the artistry in technology. Bill
+            approaches every project with a blend of pragmatism and creativity,
+            always aiming to find the sweet spot where functionality meets
+            beauty. His work is a testament to the belief that technology, at
+            its best, is both a tool for improvement and a form of expression,
+            embodying the perfect balance between solving problems and
+            celebrating the inherent beauty in the solutions.
+          </p>
         </div>
+      </div>
     </section>
     <!-- Social media links -->
     <section class="container-fluid" aria-label="Social Media Links">
-        <div class="row">
-            <div class="col social-media">
-                <h1 class="visually-hidden">Social Media Links</h1>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item"><a href="https://twitter.com/BizBoz1981" target="_blank"
-                            aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/bills81/" target="_blank"
-                            aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.instagram.com/bizdev2024/" target="_blank"
-                            aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/bizboz1981" target="_blank"
-                            aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col social-media">
+          <h1 class="visually-hidden">Social Media Links</h1>
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a
+                href="https://twitter.com/BizBoz1981"
+                target="_blank"
+                aria-label="Twitter"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://www.linkedin.com/in/bills81/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://www.instagram.com/bizdev2024/"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://github.com/bizboz1981"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <!-- footer from https://mdbootstrap.com/docs/standard/navigation/footer/-->
     <footer class="bg-body-tertiary text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3 light-background" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 Copyright:
-            <a class="text-body" href="#">billsaunders.com</a>
-        </div>
+      <!-- Copyright -->
+      <div
+        class="text-center p-3 light-background"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-body" href="#">billsaunders.com</a>
+      </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/69f3a11e1c.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/69f3a11e1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

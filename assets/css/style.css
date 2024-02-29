@@ -77,6 +77,17 @@
   color: white;
 }
 
+/* -----------------------------------------------------------------------Navbar Brand */
+.navbar-brand {
+  font-family: "exo", sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+
+.nav-link {
+  font-family: "anonymous pro", monospace;
+}
+
 /* ----------------------------------------------------------------------------home page */
 .fade-in-bg {
   background-color: var(--brand-dark-gray);
