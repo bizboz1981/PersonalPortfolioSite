@@ -1,11 +1,11 @@
-![Am I Responsive Mockup](assets/documentation/AmIResponsive.png)
+![Am I Responsive Mockup](assets/documentation/am_i_responsive.png)
 
 # Bill Saunders: Personal Portfolio Site
 Link to live project: https://bizboz1981.github.io/PersonalPortfolioSite/index.html
 
 ## Table of Contents
 [User Experience (UX)](#user-experience-ux)  
-[Features](#features)  
+[Features](#existing-features)  
 [Design](#design)  
 [Technologies Used](#technologies-used)  
 [Testing](#testing)  
@@ -186,7 +186,7 @@ I used the following media queries to ensure the site was responsive on all devi
 
 ### Online Validation Services
 * [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) - all colours used passed the contrast checker. Apart from white on brand dark grey (which has a contrast ration of 13.38:1) the main contrast is brand lime green on brand grey which has a score of almost 10:1.
-* [HTML Validator](https://validator.) - all pages received a clean bill of health, with no errors or warnings to show.
+* [HTML Validator]([https://validator.w3.org) - all pages received a clean bill of health, with no errors or warnings to show.
 * [CSS Validator](https://jigsaw.w3.org/css-validator/) - when scanning the URL of the site, the validator finds a surprising number of errors and warnings. However, all of these are associated with Bootstrap and nothing to do with the custom css (in fact, the [Code Institute site](https://codeinstitute.net)) generates a similar number of Bootstrap errors. The custom css (on direct input) has no errors.
 * [accessiBe](https://accessibe.com/accessscan) - accessibility scan informs me that the website is mostly compliant, but did suggest some areas for improvement, which I will address in future updates., Interestingly, the [Code Institute site](https://codeinstitute.net) fails on many of the same elements, suggesting that 'accessibility' is more of an ongoing commitment rather than a realistic, perfect end-state.
 
