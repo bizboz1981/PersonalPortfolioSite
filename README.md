@@ -34,10 +34,13 @@ Link to live project: https://bizboz1981.github.io/PersonalPortfolioSite/index.h
 ### Site-Level Elements
 ##### Navbar
 This is a [bootstrap](https://getbootstrap.com) navbar that is fixed to the top of the page. It contains links to the Home, About, Projects and Contact sections of the site. The navbar is responsive and collapses to a hamburger menu on smaller screens.
+![alt text](assets/documentation/navbar.png) 
+![alt text](assets/documentation/navbar_collapsed.png)
 ##### Social Media Links
 These are located in the footer of the site and are represented by the social media icons for LinkedIn, GitHub, Instagram and Twitter. They are links to Bill's profiles on these platforms.
 ##### Footer
-The footer uses bootstrap classes and the code was sourced from [mdbootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/)
+The footer uses bootstrap classes and the code was sourced from [mdbootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/). It represents my intention to buy and deploy to a custom domain.
+![alt text](assets/documentation/footer_social.png)
 ### Page-Level Elements
 #### Home
 The home page is all about getting a sense of who Bill is. The feel of the site is clean and slick, with a modern, techy feel. The colour scheme is grey with a the odd pop of lime green and hot pink.
@@ -186,13 +189,17 @@ I used the following media queries to ensure the site was responsive on all devi
 
 ### Online Validation Services
 * [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) - all colours used passed the contrast checker. Apart from white on brand dark grey (which has a contrast ration of 13.38:1) the main contrast is brand lime green on brand grey which has a score of almost 10:1.
+  ![alt text](assets/documentation/contrast_check.png)
 * [HTML Validator]([https://validator.w3.org) - all pages received a clean bill of health, with no errors or warnings to show.
+  ![alt text](assets/documentation/html_validation.png)
 * [CSS Validator](https://jigsaw.w3.org/css-validator/) - when scanning the URL of the site, the validator finds a surprising number of errors and warnings. However, all of these are associated with Bootstrap and nothing to do with the custom css (in fact, the [Code Institute site](https://codeinstitute.net)) generates a similar number of Bootstrap errors. The custom css (on direct input) has no errors.
+  ![alt text](assets/documentation/css_validation.png)
 * [accessiBe](https://accessibe.com/accessscan) - accessibility scan informs me that the website is mostly compliant, but did suggest some areas for improvement, which I will address in future updates., Interestingly, the [Code Institute site](https://codeinstitute.net) fails on many of the same elements, suggesting that 'accessibility' is more of an ongoing commitment rather than a realistic, perfect end-state.
 
 
 ### Lighthouse
 I used the Lighthouse tool in Chrome DevTools to test the site's performance, accessibility, best practices and SEO. The results were as follows: 98% | 100% |100% |100% | NA. The only area for improvement was the 'Performance' score, which was 98%. This was partly due to the size and performance of the hero image. I plan to change this to webp format.
+![alt text](assets/documentation/lighthouse.png)
 
 ### Bugs
 

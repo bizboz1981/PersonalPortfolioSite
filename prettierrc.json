@@ -1,0 +1,7 @@
+{
+  "htmlWhitespaceSensitivity": "css",
+  "endOfLine": "lf",
+  "semi": false,
+  "singleQuote": true,
+  "formatOnSave": false
+}
