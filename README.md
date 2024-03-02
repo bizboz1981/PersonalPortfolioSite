@@ -250,7 +250,7 @@ I used the Lighthouse tool in Chrome DevTools to test the site's performance, ac
 ![alt text](assets/documentation/lighthouse.png)
 
 ### Bugs
-
+To my knowledge, and as per my testing, no major bugs remain. There was a persistent 'bug' on mobiles whereby the parallax effect on the hero image didn't work (see above). I therefore replaced `background-attachment: fixed` property in css with `background-attachment: scroll`.
 # Deployment
 My [site](https://bizboz1981.github.io/PersonalPortfolioSite/) is deployed to [GitHub Pages](https://pages.github.com). 
 
