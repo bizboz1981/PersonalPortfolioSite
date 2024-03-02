@@ -84,6 +84,9 @@ This is a simple contact form that allows the user to get in touch with Bill. Th
 * I will, in due course, deploy to a custom URL.
 
 # Design
+## Wireframes
+![wireframes](assets/documentation/wireframes.png)
+The design of the finished site was informed by these wireframes, which I mocked up using [Balsamiq](https://balsamiq.com).
 ## Colour Scheme
 The colour scheme uses a lot of grey. The main colour "brand-dark-gray" (#2f2f2f) was sampled from the hero image on the home page. The inspiration of pairing this with the secondary brand colour green ("brand-lime": #00ff00) and the tertiary pink ("brand-pink": #ff00ff) was taken from [here](https://www.schemecolor.com/pink-grey-green.php). Contrast was checked for accessibility using[WebAIM's contrast checker](https://webaim.org/resources/contrastchecker/). The green and pink are used sparingly to add a pop of colour and to make the site feel modern and fresh. The green is used for the navbar, the hero image on the home page, the 'Buzz Words' on the home page, the progress bars on the About page and the 'Send' button on the Contact page. The pink is used for the 'Buzz Word' on the home page and the 'Send' button on the Contact page. The grey is used for the background of the site and the text. The white is used for the text and the progress bars on the About page.
 
@@ -94,12 +97,13 @@ The colour scheme uses a lot of grey. The main colour "brand-dark-gray" (#2f2f2f
 * Markdown
 
 ## Applications
-* [Git](https://git-scm.com) - for version control
-* [GitHub](https://github.com) - for version control and website hosting
-* [Visual Studio Code](https://code.visualstudio.com) - for coding the project and managing the files
-* [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) - for photo editing
-* [OpenAI's DALL-E](https://openai.com/dall-e-3) - for image generation
-* [Convertio](https://convertio.co/) - for converting images to webp format
+* [Git](https://git-scm.com) - for version control.
+* [GitHub](https://github.com) - for version control and website hosting.
+* [Visual Studio Code](https://code.visualstudio.com) - for coding the project and managing the files.
+* [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) - for photo editing.
+* [OpenAI's DALL-E](https://openai.com/dall-e-3) - for image generation.
+* [Convertio](https://convertio.co/) - for converting images to webp format.
+* [Balsamiq](https://balsamiq.com) - for wireframing.
 
 ## Frameworks, Libraries & CDNs
 * [Google Fonts](https://fonts.google.com/) - 'Exo' is used for headings and the monospace 'Anonymous Pro' is used for body text for it's 'codey' feel.
@@ -237,17 +241,17 @@ I used the following media queries to ensure the site was responsive on all devi
 
 ### Online Validation Services
 * [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) - all colours used passed the contrast checker. Apart from white on brand dark grey (which has a contrast ration of 13.38:1) the main contrast is brand lime green on brand grey which has a score of almost 10:1.
-  ![alt text](assets/documentation/contrast_check.png)
+  ![Contrast Check](assets/documentation/contrast_check.png)
 * [HTML Validator]([https://validator.w3.org) - all pages received a clean bill of health, with no errors or warnings to show.
-  ![alt text](assets/documentation/html_validation.png)
+  ![html validator results](assets/documentation/html_validation.png)
 * [CSS Validator](https://jigsaw.w3.org/css-validator/) - when scanning the URL of the site, the validator finds a surprising number of errors and warnings. However, all of these are associated with Bootstrap and nothing to do with the custom css (in fact, the [Code Institute site](https://codeinstitute.net)) generates a similar number of Bootstrap errors. The custom css (on direct input) has no errors.
-  ![alt text](assets/documentation/css_validation.png)
+  ![css validator results](assets/documentation/css_validation.png)
 * [accessiBe](https://accessibe.com/accessscan) - accessibility scan informs me that the website is mostly compliant, but did suggest some areas for improvement, which I will address in future updates., Interestingly, the [Code Institute site](https://codeinstitute.net) fails on many of the same elements, suggesting that 'accessibility' is more of an ongoing commitment rather than a realistic, perfect end-state.
 
 
 ### Lighthouse
 I used the Lighthouse tool in Chrome DevTools to test the site's performance, accessibility, best practices and SEO. The results were as follows: 98% | 100% |100% |100% | NA. The only area for improvement was the 'Performance' score, which was 98%. This was partly due to the size and performance of the hero image. I plan to change this to webp format.
-![alt text](assets/documentation/lighthouse.png)
+![lighthouse results](assets/documentation/lighthouse.png)
 
 ### Bugs
 To my knowledge, and as per my testing, no major bugs remain. There was a persistent 'bug' on mobiles whereby the parallax effect on the hero image didn't work (see above). I therefore replaced `background-attachment: fixed` property in css with `background-attachment: scroll`.
