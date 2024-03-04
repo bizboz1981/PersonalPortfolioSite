@@ -258,6 +258,7 @@ To my knowledge, and as per my testing, no major bugs remain. There was a persis
 # Deployment
 My [site](https://bizboz1981.github.io/PersonalPortfolioSite/) is deployed to [GitHub Pages](https://pages.github.com). 
 
+### Forking this project for local development
 If you would like to fork this repo and use it to create your own site, I would be delighted. Just follow these steps.
 
 1. Fork the repo into your own GitHub account.
@@ -273,7 +274,15 @@ git commit -m "commit message here
 ```
 git push origin main
 ```
-7. Finally, publish to GitHub pages by clickin on Settings > Pages and deploying from the main branch /(root).
+### Deploying the project
+1. The next step is to deploy the project. I published my website to GitHub pages.
+2. Navigate to your repo, in my case https://github.com/bizboz1981/PersonalPortfolioSite.
+3. Click on Settings > Pages.
+4. Choose Source: deploy from a branch.
+5. Select the branch main/(root).
+6. GitHub will then furnish you with a URL in the format 'https://yourusername.github.io/repositoryname'.
+7. Updates to your site that you push to GitHub will automatically be deployed.
+
 # Credits
 In addition to the technologies used, I would like to credit the following for inspiration and assistance:
 * My mentor, Jack Wachira
