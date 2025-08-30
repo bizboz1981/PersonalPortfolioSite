@@ -72,6 +72,21 @@
   text-decoration: none;
 }
 
+.btn-visit-site {
+  background-color: var(--brand-pink);
+}
+
+.btn-visit-site > a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn-visit-site:hover {
+  background-color: var(--brand-lime);
+  color: black;
+  text-decoration: none;
+}
+
 .list-bg-color {
   background-color: var(--list-bg-color);
   color: white;
